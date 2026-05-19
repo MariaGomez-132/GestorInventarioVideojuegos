@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"inventario","l":"Consola"},{"p":"inventario","l":"Inventario"},{"p":"inventario","l":"Item"},{"p":"inventario","l":"Main"},{"p":"inventario.excepciones","l":"StockAgotadoException"},{"p":"inventario","l":"Videojuego"}];updateSearchResults();
