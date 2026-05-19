@@ -1,0 +1,28 @@
+# Archivos compilados
+*.class
+*.jar
+
+# Carpetas de salida
+bin/
+out/
+build/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.eclipse
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# NetBeans
+nbproject/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
