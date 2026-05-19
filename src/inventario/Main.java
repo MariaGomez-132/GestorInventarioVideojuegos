@@ -4,9 +4,16 @@
  */
 package inventario;
 import inventario.excepciones.StockAgotadoException;
+
 /**
- *
+ * Clase principal que demuestra el funcionamiento del gestor de inventario.
+ * 
+ * <p>Crea una instancia de {@link Inventario}, añade varios productos
+ * (tanto {@link Videojuego} como {@link Consola}) y realiza operaciones
+ * de búsqueda, venta y gestión de excepciones.</p>
+ * 
  * @author alexandra
+ * @version 1.0
  */
 public class Main {
 
@@ -48,8 +55,7 @@ public class Main {
         //Demostrar descuento
         System.out.println("\n--- DESCUENTO ---");
         double precioConDescuento = juegoA.calcularPrecioFinal(10);
-        System.out.printf("Precio de '%s' con 10%% descuento: %.2f€%n",
-                juegoA.getNombre(), precioConDescuento);
+        System.out.println("Precio de '" + juegoA.getNombre() + "' con 10% descuento: " + precioConDescuento + "€");
 
         //Demostrar excepción de stock agotado
         System.out.println("\n--- PRUEBA DE EXCEPCIÓN ---");
