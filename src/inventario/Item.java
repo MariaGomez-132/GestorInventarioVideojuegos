@@ -126,7 +126,14 @@ public abstract class Item {
      * @param descuento El porcentaje de descuento a aplicar (0-100).
      * @return El precio final tras aplicar el descuento.
      */
+    
+    //En feature/sistema-descuentos
     public double calcularPrecioFinal(double descuento) {
+        // Descuento especial: si supera el 20%, se aplica un descuento fijo extra del 5%
+        if (descuento > 20) {
+        descuento += 5;
+        }
+        
         return precio - (precio * descuento / 100);
     }
     
