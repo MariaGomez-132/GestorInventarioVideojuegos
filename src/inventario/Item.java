@@ -126,7 +126,14 @@ public abstract class Item {
      * @param descuento El porcentaje de descuento a aplicar (0-100).
      * @return El precio final tras aplicar el descuento.
      */
+    
+    //En hotfix/correccion-precios
     public double calcularPrecioFinal(double descuento) {
+        //Corrección: el descuento máximo permitido es del 50%
+        if (descuento > 50) {
+        descuento = 50;
+        }
+        
         return precio - (precio * descuento / 100);
     }
     
