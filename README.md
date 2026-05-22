@@ -48,3 +48,11 @@ NetBeans generará la documentación en la carpeta `dist/javadoc/`.
 Copia el contenido de esa carpeta dentro de **docs/** en la raíz del proyecto.
 
 ---
+
+## Documentación Javadoc
+La documentación completa del proyecto está desplegada en GitHub Pages:
+https://mariagomez-132.github.io/GestorInventarioVideojuegos/
+
+## Autor
+
+- **Alexandra García** — Módulo de Entornos de Desarrollo
