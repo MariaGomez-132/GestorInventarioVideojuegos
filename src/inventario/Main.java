@@ -52,16 +52,20 @@ public class Main {
         System.out.println("\n--- VENTA ---");
         inventario.venderItem("God of War Ragnarok", 2);
 
-        //Demostrar descuento
-        System.out.println("\n--- DESCUENTO ---");
+        //Demostrar sistema de descuentos
+        System.out.println("\n--- SISTEMA DE DESCUENTOS ---");
         
-        //Descuento normal
+        //Descuento normal (menor al 20%, no aplica extra)
         double precioConDescuento = juegoA.calcularPrecioFinal(10);
         System.out.println("Precio de '" + juegoA.getNombre() + "' con 10% descuento: " + precioConDescuento + "€");
-
+        
+        //Descuento especial (mayor al 20%, se aplica 5% extra)
+        double descuento2 = juegoB.calcularPrecioFinal(25);
+        System.out.println("'" + juegoB.getNombre() + "' con 25% descuento (aplica extra): " + descuento2 + "€"); 
+        
         //Prueba del límite máximo del 50%
-        double descuento2 = juegoB.calcularPrecioFinal(80);
-        System.out.println("'" + juegoB.getNombre() + "' con 80% descuento (límite al 50%): " + descuento2 + "€");
+        double descuento3 = juegoB.calcularPrecioFinal(80);
+        System.out.println("'" + juegoB.getNombre() + "' con 80% descuento (límite al 50%): " + descuento3 + "€");
         
         //Demostrar excepción de stock agotado
         System.out.println("\n--- PRUEBA DE EXCEPCIÓN ---");
