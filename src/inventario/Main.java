@@ -54,9 +54,15 @@ public class Main {
 
         //Demostrar descuento
         System.out.println("\n--- DESCUENTO ---");
+        
+        //Descuento normal
         double precioConDescuento = juegoA.calcularPrecioFinal(10);
         System.out.println("Precio de '" + juegoA.getNombre() + "' con 10% descuento: " + precioConDescuento + "€");
 
+        //Prueba del límite máximo del 50%
+        double descuento2 = juegoB.calcularPrecioFinal(80);
+        System.out.println("'" + juegoB.getNombre() + "' con 80% descuento (límite al 50%): " + descuento2 + "€");
+        
         //Demostrar excepción de stock agotado
         System.out.println("\n--- PRUEBA DE EXCEPCIÓN ---");
         try {
